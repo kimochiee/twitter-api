@@ -10,7 +10,6 @@ export const login = (req: Request, res: Response) => {
 
 export const register = catchAsync(
   async (req: Request<ParamsDictionary, any, RegisterReqBody>, res: Response, next: NextFunction) => {
-    throw new Error('Test error')
     const user = await usersService.register(req.body)
 
     res.status(200).json({ message: 'Register success', user })
