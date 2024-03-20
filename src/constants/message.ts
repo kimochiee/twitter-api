@@ -1,5 +1,6 @@
 export const userMessage = {
   VALIDATION_ERROR: 'Validation error',
+  USER_NOT_FOUND: 'User not found',
   EMAIL_ALREADY_EXISTED: 'Email already existed',
   EMAIL_IS_REQUIRED: 'Email is required',
   EMAIL_IS_INVALID: 'Email is invalid',
