@@ -1,5 +1,7 @@
-import { MongoClient, Db } from 'mongodb'
+import { MongoClient, Db, Collection } from 'mongodb'
 import { env } from '../constants/env'
+import User from '~/models/schemas/User.schema'
+import RefreshToken from '~/models/schemas/RefreshToken.schema'
 
 const uri = env.MONGO_URI as string
 const db_name = env.DB_NAME as string
@@ -23,8 +25,12 @@ class DatabaseService {
     }
   }
 
-  get users() {
+  get users(): Collection<User> {
     return this.db.collection('users')
+  }
+
+  get refreshTokens(): Collection<RefreshToken> {
+    return this.db.collection('refresh_tokens')
   }
 }
 

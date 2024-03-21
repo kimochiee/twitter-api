@@ -1,6 +1,7 @@
 export const userMessage = {
   VALIDATION_ERROR: 'Validation error',
   USER_NOT_FOUND: 'User not found',
+  EMAIL_OR_PASSWORD_INCORRECT: 'Email or password incorrect',
   EMAIL_ALREADY_EXISTED: 'Email already existed',
   EMAIL_IS_REQUIRED: 'Email is required',
   EMAIL_IS_INVALID: 'Email is invalid',
@@ -18,5 +19,6 @@ export const userMessage = {
   CONFIRM_PASSWORD_MUST_BE_STRONG:
     'Confirm password must be 6-20 characters long and contain at least one lowercase letter, one uppercase letter, one number and one special character',
   PASSWORD_AND_CONFIRM_PASSWORD_NOT_MATCH: 'Password and confirm password not match',
-  DATE_OF_BIRTH_MUST_BE_ISO8601: 'Date of birth must be in ISO8601 format'
+  DATE_OF_BIRTH_MUST_BE_ISO8601: 'Date of birth must be in ISO8601 format',
+  ACCESS_TOKEN_IS_REQUIRED: 'Access token is required'
 }
